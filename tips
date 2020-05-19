@@ -1,0 +1,83 @@
+\e[34mBash:\e[39m
+\e[34mBash:\e[39m Testing Super Much \n hello yes
+\e[31mVim:\e[39m
+\e[33mTools:\e[39m
+\e[32mFun Fact:\e[39m
+
+\e[34mBash:\e[39mgit commit || echo "Commit failed"
+\e[34mBash:\e[39m`{A,B}` | Same as `A B` 
+\e[34mBash:\e[39m`{A,B}.js` | Same as `A.js B.js` 
+\e[34mBash:\e[39m`{1..5}` | Same as `1 2 3 4 5` 
+\e[34mBash:\e[39m`${FOO%suffix}` | Remove suffix 
+\e[34mBash:\e[39m`${FOO#prefix}` | Remove prefix 
+\e[34mBash:\e[39m`${FOO%%suffix}` | Remove long suffix 
+\e[34mBash:\e[39m`${FOO##prefix}` | Remove long prefix 
+\e[34mBash:\e[39m`${FOO/from/to}` | Replace first match 
+\e[34mBash:\e[39m`${FOO//from/to}` | Replace all 
+\e[34mBash:\e[39m`${FOO/%from/to}` | Replace suffix 
+\e[34mBash:\e[39m`${FOO/#from/to}` | Replace prefix 
+\e[34mBash:\e[39m`${FOO:0:3}`  | Substring _(position, length)_ 
+\e[34mBash:\e[39m`${FOO:-3:3}` | Substring from the right 
+\e[34mBash:\e[39m`${#FOO}` | Length of `$FOO` 
+\e[34mBash:\e[39m`${FOO:-val}`        | `$FOO`, or `val` if not set 
+\e[34mBash:\e[39m`${FOO:=val}`        | Set `$FOO` to `val` if not set 
+\e[34mBash:\e[39m`${FOO:+val}`        | `val` if `$FOO` is set 
+\e[34mBash:\e[39m`${FOO:?message}`    | Show error message and exit if `$FOO` is not set 
+\e[34mBash:\e[39m`$#`       | Number of arguments                    
+\e[34mBash:\e[39m`$*`       | All arguments                          
+\e[34mBash:\e[39m`$@`       | All arguments, starting from first     
+\e[34mBash:\e[39m`$1`       | First argument                         
+\e[34mBash:\e[39m`$_`       | Last argument of the previous command  
+\e[34mBash:\e[39m`[[ -z STRING ]]`        | Empty string          
+\e[34mBash:\e[39m`[[ -n STRING ]]`        | Not empty string      
+\e[34mBash:\e[39m`[[ STRING == STRING ]]` | Equal                 
+\e[34mBash:\e[39m`[[ STRING != STRING ]]` | Not Equal             
+\e[34mBash:\e[39m`[[ NUM -eq NUM ]]`      | Equal                 
+\e[34mBash:\e[39m`[[ NUM -ne NUM ]]`      | Not equal             
+\e[34mBash:\e[39m`[[ NUM -lt NUM ]]`      | Less than             
+\e[34mBash:\e[39m`[[ NUM -le NUM ]]`      | Less than or equal    
+\e[34mBash:\e[39m`[[ NUM -gt NUM ]]`      | Greater than          
+\e[34mBash:\e[39m`[[ NUM -ge NUM ]]`      | Greater than or equal 
+\e[34mBash:\e[39m`[[ STRING =~ STRING ]]` | Regexp                
+\e[34mBash:\e[39m`(( NUM < NUM ))`        | Numeric conditions    
+\e[34mBash:\e[39m`[[ -o noclobber ]]`   | If OPTIONNAME is enabled 
+\e[34mBash:\e[39m`[[ ! EXPR ]]`         | Not                      
+\e[34mBash:\e[39m`[[ X ]] && [[ Y ]]`   | And                      
+\e[34mBash:\e[39m`[[ X ]] || [[ Y ]]`   | Or                       
+\e[34mBash:\e[39m`[[ -e FILE ]]`         | Exists                  
+\e[34mBash:\e[39m`[[ -r FILE ]]`         | Readable                
+\e[34mBash:\e[39m`[[ -h FILE ]]`         | Symlink                 
+\e[34mBash:\e[39m`[[ -d FILE ]]`         | Directory               
+\e[34mBash:\e[39m`[[ -w FILE ]]`         | Writable                
+\e[34mBash:\e[39m`[[ -s FILE ]]`         | Size is > 0 bytes       
+\e[34mBash:\e[39m`[[ -f FILE ]]`         | File                    
+\e[34mBash:\e[39m`[[ -x FILE ]]`         | Executable              
+\e[34mBash:\e[39m`[[ FILE1 -nt FILE2 ]]` | 1 is more recent than 2 
+\e[34mBash:\e[39m`[[ FILE1 -ot FILE2 ]]` | 2 is more recent than 1 
+\e[34mBash:\e[39m`[[ FILE1 -ef FILE2 ]]` | Same files              
+\e[34mBash:\e[39m`history` | Show history 
+\e[34mBash:\e[39m`shopt -s histverify` | Don't execute expanded result immediately 
+\e[34mBash:\e[39m`!$` | Expand last parameter of most recent command 
+\e[34mBash:\e[39m`!*` | Expand all parameters of most recent command 
+\e[34mBash:\e[39m`!-n` | Expand `n`th most recent command 
+\e[34mBash:\e[39m`!n` | Expand `n`th command in history 
+\e[34mBash:\e[39m`!<command>` | Expand most recent invocation of command `<command>` 
+\e[34mBash:\e[39m`!!` | Execute last command again |         
+\e[34mBash:\e[39m`!!:s/<FROM>/<TO>/` | Replace first occurrence of `<FROM>` to `<TO>` in most recent command 
+\e[34mBash:\e[39m`!!:gs/<FROM>/<TO>/` | Replace all occurrences of `<FROM>` to `<TO>` in most recent command 
+\e[34mBash:\e[39m`!$:t` | Expand only basename from last parameter of most recent command 
+\e[34mBash:\e[39m`!$:h` | Expand only directory from last parameter of most recent command 
+\e[34mBash:\e[39m`!!:n` | Expand only `n`th token from most recent command (command is `0`; first argument is `1`) 
+\e[34mBash:\e[39m`!^` | Expand first argument from most recent command 
+\e[34mBash:\e[39m`!$` | Expand last token from most recent command 
+\e[34mBash:\e[39m`!!:n-m` | Expand range of tokens from most recent command 
+\e[34mBash:\e[39m`!!:n-$` | Expand `n`th token to last from most recent command 
+\e[34mBash:\e[39m start | up)
+\e[34mBash:\e[39m   echo "Usage: $0 {start|stop|ssh}"
+\e[34mBash:\e[39m -V | --version )
+\e[34mBash:\e[39m -s | --string )
+\e[34mBash:\e[39m -f | --flag )
+\e[34mBash:\e[39m`$?` | Exit status of last task 
+\e[34mBash:\e[39m`$!` | PID of last background task 
+\e[34mBash:\e[39m`$$` | PID of shell 
+\e[34mBash:\e[39m`$0` | Filename of the shell script 
